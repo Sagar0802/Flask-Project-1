@@ -1,0 +1,25 @@
+{% extends 'template.html'%} {% block content%}
+<h2 class="text-center">Employee Details</h2><br>
+<div class="card-deck justify-content-center">
+    {%if posts==[]:%}
+        <h2>No records found</h2>
+
+    {%else:%}
+
+        {% for value in posts %}
+        <div class="card text-white bg-light mb-3" style="max-width: 16rem; min-width: 12rem;">
+            <div class="card-header"><h4>{{value.emp_no}}</h4>
+                <div class="text-right">
+                <a href="/delemp" >
+                <img src="https://img.icons8.com/ultraviolet/40/000000/remove-user-male.png"/>
+        </a></div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{value.emp_name}}</h5>
+                <p class="card-text">{{value.place}}</p>
+            </div>
+        </div>
+        {%endfor%}
+    {%endif%}
+</div>
+{% endblock content%}

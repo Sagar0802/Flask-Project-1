@@ -1,0 +1,49 @@
+{% extends 'template.html'%} {% block content%}
+<center>
+<div class="card text-center text-white bg-light mb-3" id="addemp" style="max-width: 24rem; min-width: 18rem;">
+    <div class="card-header">
+        <h4>Add Employee</h4>
+        <img src="https://img.icons8.com/ultraviolet/40/000000/add-user-male.png"/>
+    </div>
+    <div class="card-body">
+        <form action="#" method="POST">
+            <div class="form-row align-items-center ">
+                <div class="col-auto mx-auto">
+                    <label class="sr-only" for="inlineFormInput">Employee No</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Emp No</div>
+                        </div>
+                        <input type="text" name="empno"  class="form-control" id="inlineFormInput">
+                    </div>
+                </div>
+                <div class="col-auto mx-auto">
+                    <label class="sr-only" for="empname">Employee name</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Emp Name</div>
+                        </div>
+                        <input type="text" name="empname" class="form-control" id="empname">
+                    </div>
+                </div>
+                <div class="col-auto mx-auto">
+                    <label class="sr-only" for="empPlace">Emp Place</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Emp Place</div>
+                        </div>
+                        <input type="text" name="empplace" class="form-control" id="empPlace">
+                    </div>
+                </div>
+
+                <div class="col-auto ml-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Add Employee</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+</center>
+{%endblock %}
