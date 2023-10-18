@@ -5,18 +5,21 @@
 h4,h1,h5,p,h2{
     background: -webkit-linear-gradient( bottom,black,white);
     /*background: -webkit-linear-gradient( -60deg,rgba(255,0,0),rgb(255,165,0),rgb(255,255,0),rgb(0,128,0),rgb(0,0,255),rgb(75,0,130),rgb(238,130,238));*/
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   h2,h5,p{
     /*background: -webkit-linear-gradient( bottom,rgb(255,255,0),rgba(255,0,0));*/
     background: -webkit-linear-gradient( bottom,black,white);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 h2,h6{
     font-weight:bolder;
     background: -webkit-linear-gradient( bottom,black,white);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
